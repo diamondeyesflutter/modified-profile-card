@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Card</title>
+
+  <style>
+    /* RESET */
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: 'Courier New', monospace;
+      background: linear-gradient(violet, purple); /* Ganti warna background */
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card{
+      width: 320px;
+      background: linear-gradient(violet, purple, violet); /* Warna card */
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid;
+      text-align: center;
+
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      
+    }
+
+    .profile-img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      margin-bottom: 15px;
+      transition: 0.5s;
+    }
+
+    .profile-img:hover {
+      transform: translateY(-10px);
+    }
+
+    h2{
+      margin-bottom: 10px;
+      text-shadow: 0 1px 1px violet,
+                   0 0 10px violet,
+                   0 0 10px violet;
+    }
+
+    p{
+      color: black;
+      margin-bottom: 20px;
+      font-size: 14px;
+      text-shadow: 0 1px 1px violet,
+                   0 0 10px violet,
+                   0 0 10px violet;
+    }
+
+    .btn{
+      display: inline-block;
+
+      text-decoration: none;
+
+      background: violet; 
+      color: white;
+
+      padding: 10px 20px;
+      border-radius: 8px;
+
+      transition: 0.3s;
+    }
+
+    .btn:hover{
+      background: linear-gradient(purple, violet);
+      transition: 0.3s;
+      transform: translateX(10px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- Ganti gambar sesukamu -->
+    <img 
+      class="profile-img"
+      src="https://i.imgur.com/6VBx3io.png" 
+      alt="Profile"
+    >
+
+    <h2>Fathul Khair</h2>
+
+    <p>
+      css jr programmer/ front end jr
+    </p>
+
+    <!-- pindah ke story.html -->
+    <a class="btn" href="https://www.tiktok.com/@kenadtmulu03">
+      MY TIKTOK ACCOUNT
+    </a>
+
+  </div>
+
+</body>
+</html>
